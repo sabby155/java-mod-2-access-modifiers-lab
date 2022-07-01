@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Garage {
-    private List cars = new ArrayList<>();
+    private List<Car> cars = new ArrayList<>();
 
     public Car get(int index) {
-        Car result = (Car) cars.get(index);
+        Car result = cars.get(index);
         System.out.println("Getting car:" + result.name);
         return result;
     }
